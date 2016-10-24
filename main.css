@@ -1,0 +1,190 @@
+body{
+	margin:0;
+	padding:0;
+	background: #eee;	
+}
+
+body.dark{
+	background: #000;	
+}
+
+.select{
+	position:absolute;
+	top: 35px;
+	left:calc(50% + 335px);
+	width: 40px;
+	height: 15px;
+	border-radius: 360px;
+	border:1px solid #ccc;
+	background: #eee;
+	box-shadow: 0 0 2px rgba(0,0,0,0.3);	
+	cursor:pointer;
+}
+
+.select .selector{
+	width: 15px;
+	height: 15px;
+	border-radius: 360px;
+	margin-top: -1px;	
+	background: #fff;	
+	border:1px solid #ccc;	
+	box-shadow: 0 0 2px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.select.on{
+	border:1px solid rgba(132,174,17,1);
+	background: rgba(152,194,37,1);	
+}
+
+.select.on .selector{
+	margin-left: 24px;
+}
+
+.textInput{
+	border:0px solid #ccc;
+	background: transparent;
+	width:740px;
+	height: 30px;
+	position: absolute;
+	top: 130px;
+	left:calc(50% - 370px);
+	border-bottom: 1px solid #ccc;
+}
+
+span{
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: 500;
+	font-size: 18px;
+	color:#ccc;
+	display: inline-block;
+	width: 10px;
+}
+
+.currentItem{
+	color:black;
+	background: yellow;
+}
+
+.textInput_right{
+	color: green;
+	background: transparent;
+}
+
+.textInput_error{
+	color: red;
+}
+
+.keyboard{
+	position:absolute;
+	top:200px;
+	left: calc(50% - 380px);
+	width: 760px;
+	height: 270px;
+	/*background: #000;*/
+}
+
+.keyboard ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.keyboard ul li{
+	float:left;
+	width:40px;
+	height: 40px;
+	border:1px solid #bbb;	
+	border-radius: 3px;
+	margin-left: 10px;
+	margin-top: 10px;
+	box-shadow:2px 2px rgb(220,220,220); 
+
+
+}
+
+.keyboard ul li:nth-child(14),.keyboard ul li:nth-child(14) .text,.keyboard ul li:nth-child(14).activeKey .finger{	
+	width: 65px;
+}
+
+.keyboard ul li:nth-child(15),.keyboard ul li:nth-child(15) .text,.keyboard ul li:nth-child(15).activeKey .finger{	
+	width: 65px;
+}
+
+.keyboard ul li:nth-child(29),.keyboard ul li:nth-child(29) .text,.keyboard ul li:nth-child(29).activeKey .finger{	
+	width: 79px;
+}
+
+.keyboard ul li:nth-child(41),.keyboard ul li:nth-child(41) .text,.keyboard ul li:nth-child(41).activeKey .finger{
+	width: 79px;
+}
+
+.keyboard ul li:nth-child(42),.keyboard ul li:nth-child(42) .text,.keyboard ul li:nth-child(42).activeKey .finger{	
+	width: 105px;
+}
+
+.keyboard ul li:nth-child(53),.keyboard ul li:nth-child(53) .text,.keyboard ul li:nth-child(53).activeKey .finger{
+	width: 105px;
+}
+
+.keyboard ul li:nth-child(57),.keyboard ul li:nth-child(57) .text,.keyboard ul li:nth-child(57).activeKey .finger{	
+	width: 54px;
+}
+
+.keyboard ul li:nth-child(58),.keyboard ul li:nth-child(58) .text,.keyboard ul li:nth-child(58).activeKey .finger{	
+	width: 260px;
+}
+
+.keyboard ul .direc,.keyboard ul .direc .text,.keyboard ul .direc.activeKey .finger{	
+	height: 19px;
+}
+
+.keyboard ul .under{
+	margin-top: 30px;
+}
+
+.keyboard ul li:nth-child(63){
+	margin-left: -41.5px;	
+}
+
+
+.keyboard ul li .text{
+	color: #bbb;
+	font-family: Helvetica;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.keyboard ul li:nth-child(15) .text,.keyboard ul li:nth-child(29) .text,.keyboard ul li:nth-child(42) .text{
+	text-align: left;
+}
+
+.keyboard ul li:nth-child(14) .text,.keyboard ul li:nth-child(41) .text,.keyboard ul li:nth-child(53) .text{
+	text-align: right;
+}
+
+.keyboard ul .lastl .text{
+	line-height: 60px;
+}
+
+.keyboard ul li.activeKey .finger{
+	width: 40px;
+	height: 40px;
+	margin-top:-40px;
+	border-radius: 3px;
+	border:1px solid #bbb;	
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 10px 10px rgba(255,255,255,0.8);
+	opacity: 0;
+}
+
+.keyboard ul .direc.activeKey .finger{
+	margin-top: -19px;
+}
